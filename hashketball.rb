@@ -127,8 +127,11 @@ def game_hash
 end
 
 def num_points_scored(player_name)
+  result = ""
   game_hash.each do |loc, team|
     game_hash[loc].each do |team_info, v|
       game_hash[loc][team_info].each do |players, inner_v|
-        if player_name == game_hash[loc][team_info][players][playe]
+        if player_name == game_hash[loc][team_info][players][player_name]
+          result = game_hash[loc][team_info][players][]
+          
   

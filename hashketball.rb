@@ -130,5 +130,5 @@ def num_points_scored(player_name)
   game_hash.each do |loc, team|
     game_hash[loc].each do |team_info, v|
       game_hash[loc][team_info].each do |players, name|
-        if player_name == 
+        game_hash[loc][team_info][players]
   

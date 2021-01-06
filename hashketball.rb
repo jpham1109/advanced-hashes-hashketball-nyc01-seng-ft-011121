@@ -127,5 +127,5 @@ def game_hash
 end
 
 def num_points_scored(player_name)
-  game_hash.each do |locate, 
+  game_hash.each do |loc, 
   

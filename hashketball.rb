@@ -130,7 +130,7 @@ def num_points_scored(player_name)
   result = ""
   game_hash.each do |loc, team|
     game_hash[team].each do |team_info|
-      game_hash[team][team_info][:players].each do |v|
+      game_hash[team][team_info].each do |v|
         binding.pry
         
       end

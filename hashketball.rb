@@ -175,7 +175,7 @@ def player_numbers(team_name)
     team[:players].map do |players|
       if team_name == team[:team_name]
         players[:number]
-    binding.pry
+    #binding.pry
     end
   end 
 end

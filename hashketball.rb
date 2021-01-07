@@ -167,10 +167,11 @@ def team_names
 end
 
 def player_numbers(team_name)
-  game_hash.map do |loc, team|
+  result = []
+  game_hash.each do |loc, team|
     if team_name == team[:team_name]
-      team[:players].map do |players|
-        players[:number]
+      team[:players].each do |players|
+        result << players[:number]
         binding.pry
       end
     end

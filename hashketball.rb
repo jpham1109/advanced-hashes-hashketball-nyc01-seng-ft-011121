@@ -173,7 +173,7 @@ end
 def player_numbers(team_name)
   game_hash.map do |loc, team|
     team[:players].map do |players|
-      players
+      players[:number]
     binding.pry
     end
   end 

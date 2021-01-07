@@ -179,15 +179,16 @@ def player_numbers(team_name)
 end
 
 def player_stats(player_name)
+  result = ""
   game_hash.each do |loc, team|
     team[:players].each do |player|
       if player_name = player[:player_name]
-        player
+        result = player
       #binding.pry
       end
     end
   end
-  player
+  result
 end
 
 

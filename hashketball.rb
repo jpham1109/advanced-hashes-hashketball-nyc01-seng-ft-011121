@@ -192,7 +192,15 @@ end
 
 def big_shoe_rebounds
   result = ""
-  big_shoe = 
+  big_shoe = 7
+  game_hash.each do |loc, team|
+    team[:players].each do |player|
+      if big_shoe < player[:shoe]
+        big_shoe = player[:shoe]
+        result = player[:player_name]
+      end 
+    end 
+  end
 end
 
 

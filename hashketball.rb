@@ -129,9 +129,9 @@ end
 def num_points_scored(player_name)
   result = ""
   game_hash.each do |loc, team|
-    team[:players].each do |players|
-      if player_name == players[:player_name]
-      result = players[:points]
+    team[:players].each do |player|
+      if player_name == player[:player_name]
+      result = player[:points]
       end
     end
   end
@@ -141,9 +141,9 @@ end
 def shoe_size(player_name)
   result = ""
   game_hash.each do |loc, team|
-    team[:players].each do |players|
-      if player_name == players[:player_name]
-        result = players[:shoe]
+    team[:players].each do |player|
+      if player_name == player[:player_name]
+        result = player[:shoe]
       end
     end 
   end 
@@ -170,12 +170,20 @@ def player_numbers(team_name)
   result = []
   game_hash.each do |loc, team|
     if team_name == team[:team_name]
-      team[:players].each do |players|
-        result << players[:number]
+      team[:players].each do |player|
+        result << player[:number]
       end
     end
   end
   result.sort
+end
+
+def player_stats(player_name)
+  game_hash.each do |loc, team|
+    team[:players].each do |player|
+      binding.pry
+    end
+  end
 end
 
 

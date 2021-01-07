@@ -168,4 +168,6 @@ def team_names
   result = ""
   game_hash.each do |loc, team|
     binding.pry
+  end
+end
   

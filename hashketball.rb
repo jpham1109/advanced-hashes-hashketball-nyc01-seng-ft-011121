@@ -132,6 +132,7 @@ def num_points_scored(player_name)
     game_hash[team].each do |team_info, v|
       game_hash[team][team_info].each do |inner_v|
         
+      end
     end
   end
   result

@@ -165,8 +165,9 @@ end
 
 def team_names
   game_hash
-  result = ""
+  result = []
   game_hash.each do |loc, team|
+    team[:team_name]
     binding.pry
   end
 end

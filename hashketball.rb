@@ -176,6 +176,7 @@ def player_numbers(team_name)
       if team_name == team[:team_name]
         players[:number]
     #binding.pry
+      end
     end
   end 
 end

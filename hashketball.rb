@@ -171,12 +171,13 @@ def team_names
 end
 
 def player_numbers(team_name)
-  game_hash.map do |loc, team|
+  result = game_hash.map do |loc, team|
     if team_name == team[:team_name]
       team[:players].map do |players|
-        players[:number].sort
+        players[:number]
       end
     end
-  end 
+  end
+  result.sort
 end
     

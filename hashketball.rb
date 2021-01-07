@@ -165,10 +165,10 @@ end
 
 def team_names
   game_hash
-  result = []
   game_hash.each do |loc, team|
     result << team
     #binding.pry
   end
+  result
 end
   

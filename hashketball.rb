@@ -184,6 +184,7 @@ def player_stats(player_name)
       if player_name = player[:player_name]
         player
       #binding.pry
+      end
     end
   end
 end

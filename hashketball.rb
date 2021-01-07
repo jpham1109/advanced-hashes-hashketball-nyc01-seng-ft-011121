@@ -172,8 +172,8 @@ end
 
 def player_numbers(team_name)
   game_hash.map do |loc, team|
-    team[:players].map do |players|
-      if team_name == team[:team_name]
+    if team_name == team[:team_name]
+      team[:players].map do |players|
         players[:number]
     #binding.pry
       end

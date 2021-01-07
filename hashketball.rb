@@ -129,12 +129,8 @@ end
 def num_points_scored(player_name)
   result = ""
   game_hash.each do |loc, team|
-    game_hash[loc].each do |team_info|
-      game_hash[loc][v].each do |players|
-        if player_name == game_hash[loc][team_info][players][player_name]
-          result = game_hash[loc][team_info][players][points]
-        end
-      end
+    game_hash[loc].each do |team_info, v|
+      game_hash[loc][team_info][]
     end
   end
   result

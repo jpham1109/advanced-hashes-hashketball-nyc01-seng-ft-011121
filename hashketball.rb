@@ -127,7 +127,6 @@ def game_hash
 end
 
 def num_points_scored(player_name)
-  game_hash
   result = ""
   game_hash.each do |loc, team|
     team[:players].each do |players|
@@ -140,7 +139,6 @@ def num_points_scored(player_name)
 end
 
 def shoe_size(player_name)
-  game_hash
   result = ""
   game_hash.each do |loc, team|
     team[:players].each do |players|
@@ -153,7 +151,6 @@ def shoe_size(player_name)
 end
 
 def team_colors(team_name)
-  game_hash
   result = ""
   game_hash.each do |loc, team|
     if team_name == team[:team_name]
@@ -164,20 +161,19 @@ def team_colors(team_name)
 end
 
 def team_names
-  game_hash
   game_hash.map do |loc, team|
     team[:team_name]
   end
 end
 
 def player_numbers(team_name)
-  result = game_hash.map do |loc, team|
+  game_hash.map do |loc, team|
     if team_name == team[:team_name]
       team[:players].map do |players|
         players[:number]
       end
     end
   end
-  result.sort
+  binding.pry
 end
     

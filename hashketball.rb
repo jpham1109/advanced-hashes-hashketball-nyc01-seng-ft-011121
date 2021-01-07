@@ -167,8 +167,7 @@ def team_names
   game_hash
   game_hash.map do |loc, team|
     team[:team_name]
-    binding.pry
+    #binding.pry
   end
-  result
 end
   

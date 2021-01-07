@@ -172,10 +172,11 @@ def player_numbers(team_name)
     if team_name == team[:team_name]
       team[:players].each do |players|
         result << players[:number]
-        #binding.pry
       end
     end
   end
   result.sort
 end
+
+
     

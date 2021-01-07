@@ -171,5 +171,8 @@ def team_names
 end
 
 def player_numbers(team_name)
-  game_hash
-  game
+  game_hash.map do |loc, team|
+    binding.pry
+  end 
+end
+    
